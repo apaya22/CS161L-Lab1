@@ -30,10 +30,10 @@ always @(posedge src_clk) begin
             tick_out  <= ~tick_out;
             accumulator <= 0;
         end 
-        // else begin  
-        //     tick_out <= 0;
-        // end
     end
+    else begin  
+        tick_out <= 0;
+    end 
 end
 
 // Change this assign statement to the actual tick value
